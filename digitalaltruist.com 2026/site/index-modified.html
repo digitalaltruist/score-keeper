@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Christopher Grant — Chapters</title>
+    <meta
+      name="description"
+      content="Christopher Grant: Chapters"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles-modified.css" />
+  </head>
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const moreButtons = document.querySelectorAll(".more-link");
+	
+	  moreButtons.forEach(function (button) {
+		button.addEventListener("click", function () {
+		  const copyBlock = button.closest(".case-study-copy");
+		  const moreText = copyBlock.querySelector(".more-text");
+	
+		  if (moreText) {
+			moreText.style.display = "block";
+			button.style.display = "none";
+		  }
+		});
+	  });
+	});
+	</script>
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const video = document.querySelector(".streetcar-scroll-start");
+  if (!video) return;
+
+  let started = false;
+  let lastScroll = window.scrollY;
+
+  function onScroll() {
+    const currentScroll = window.scrollY;
+
+    if (!started && currentScroll > lastScroll) {
+      started = true;
+      video.play().catch(()=>{});
+      window.removeEventListener("scroll", onScroll);
+    }
+
+    lastScroll = currentScroll;
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+});
+</script>
+	
+  <body>
+    <main class="page-shell">
+      <div class="page">
+
+        <section class="testimonial" aria-label="Testimonial">
+          <blockquote class="testimonial__quote">
+            “I've witnessed Chris break down complex problems into solutions equal parts elegant and strategic.”
+          </blockquote>
+          <p class="testimonial__name">
+            <a
+              href="https://www.linkedin.com/in/haseebamalik/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Haseeb Malik
+            </a>
+          </p>
+          <p class="testimonial__role">Senior Director of Marketing, Scopely</p>
+        </section>
+
+<section class="streetcar-strip" aria-label="Preply streetcar campaign">
+  <video
+    class="streetcar-strip__video streetcar-scroll-start"
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="assets/header-preply-streetcar-poster.jpg"
+  >
+    <source src="assets/header-preply-streetcar.mp4" type="video/mp4" />
+  </video>
+</section>
+		
+        <section class="chapters">
+          <header class="chapters__header">
+            <h1 class="chapters__title">Chapters</h1>
+            <p class="chapters__byline">
+              by
+              <a href="#about-author">Christopher Grant</a>
+            </p>
+          </header>
+
+          <div class="logo-row" aria-label="Selected companies">
+
+            <a
+              class="logo-row__item"
+              href="https://en.wikipedia.org/wiki/Tuenti"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telefónica"
+            >
+              <img src="assets/logo-tuenti.png" alt="Tuenti" />
+            </a>
+
+
+            <a
+              class="logo-row__item"
+              href="http://king.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="King"
+            >
+              <img src="assets/logo-king.png" alt="King Games" />
+            </a>
+
+            <a
+              class="logo-row__item"
+              href="http://preply.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Preply"
+            >
+              <img src="assets/logo-preply.png" alt="Preply" />
+            </a>
+
+            <a
+              class="logo-row__item"
+              href="http://lingokids.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Lingokids"
+            >
+              <img src="assets/logo-lingokids.png" alt="Lingokids" />
+            </a>
+
+            <a
+              class="logo-row__item"
+              href="http://pro.doctoralia.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Docplanner"
+            >
+              <img src="assets/logo-docplanner.png" alt="Docplanner" />
+            </a>
+          </div>
+<div class="chapter-list">
+  <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">LINGOKIDS | 2024-2025</p>
+      <h2 class="chapter__title">Mickey &amp; The Mix</h2>
+
+      <div class="case-study-copy">
+        <p class="case-study-copy__intro">
+Lingokids entered discussions with Disney for a first-of-its-kind learning partnership. The challenge: introduce iconic characters into a product built around original IP and designed for autonomous learning by young children.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+I led the design vision for the Disney pitch and presented the product concept directly to Disney.
+</p>
+
+<p>
+Together with the lead designer, we created MIX (Multi-IP Experience), a scalable framework allowing Disney and Lingokids characters to coexist naturally within the learning ecosystem.
+</p>
+
+<p>
+The system introduced themed character “IP homes” where activities live inside kid-friendly worlds while preserving Lingokids’ simple learning patterns. Before launch, we validated the framework using Lingokids’ own characters to de-risk the Disney rollout.
+</p>
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-6-disney.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+
+  <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">PREPLY | 2023-2024</p>
+      <h2 class="chapter__title">Design-Centric</h2>
+      <div class="case-study-copy">
+<p class="case-study-copy__intro">
+As Preply scaled, experimentation alone was no longer enough to deliver the level of product quality and differentiation required. The company needed to become design-centric.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+This shift culminated in a full rebrand with Koto, the global studio behind brands like Airbnb. I led the product implementation of the new identity across Preply’s ecosystem.
+</p>
+
+<p>
+Rather than applying the brand mechanically, we introduced a tiered rollout model: some surfaces adopted the visual system quickly, while others were redesigned to fully leverage the brand’s expressive potential.
+</p>
+
+<p>
+In parallel, I strengthened Preply’s design culture—recruiting senior designers, establishing critique and design-jam rituals, and bringing in external advisors including Airbnb’s former Head of Design Alex Schleifer and Behance co-founder Matias Corea.
+</p>
+</div>
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-5-preply-prep_para_pro.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+
+  <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">PREPLY | 2020-2023</p>
+      <h2 class="chapter__title">Product Detective Stories</h2>
+      <div class="case-study-copy">
+        
+        <p class="case-study-copy__intro">
+During Preply’s pandemic-era hypergrowth, the product organization had become heavily reliant on small A/B tests as its primary growth engine. I set out to rebalance discovery.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+I reframed Product Design and Research as “Product Detectives”: teams responsible for uncovering the deeper user problems behind the metrics.
+</p>
+
+<p>
+We hosted live learner town halls, created Preply’s first end-to-end Customer Journey Map, and co-authored the Learning Ecosystem strategy with the CPO.
+</p>
+
+<p>
+A major outcome was a North Star experience exploration. While the concepts were not implemented directly, the work revealed a key growth driver: teacher affinity. When learners strongly connect with a teacher’s personality and teaching style, engagement and learning outcomes improve dramatically.
+</p>
+</div>
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-4-detectives.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+
+  <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">KING | 2017-2020</p>
+      <h2 class="chapter__title">UX Saga</h2>
+      <div class="case-study-copy">
+        <p class="case-study-copy__intro">
+As Global UX Director at King, my mission was to introduce user-centered design into one of the world’s most successful game organizations.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+Game teams already had exceptional creativity and strong analytics. What was missing was a systematic way to connect those strengths to player needs.
+</p>
+
+<p>
+Working with Product, we developed Player-Centered Design to improve experiment success rates in smaller titles before scaling winning mechanics to flagship games like Candy Crush.
+</p>
+
+<p>
+We also introduced King’s first player research practice and created the Useful–Usable–Desirable framework, later scaled across the company through immersive UX Bootcamps.
+</p>
+</div>
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-3-ux-saga.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+
+  <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">KING | 2015-2027</p>
+      <h2 class="chapter__title">Kingdom Come</h2>
+      <div class="case-study-copy">
+<p class="case-study-copy__intro">
+King’s games reached massive audiences, but players were fragmented across titles. The opportunity was to connect them into a shared network experience.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+We introduced unified accounts and social profiles so players could exist as a single identity across King’s games, enabling shared progress, discovery, and competition.
+</p>
+
+<p>
+These foundations enabled new network-level features and a redesigned invite system called Kingvites, prioritizing invitations to friends already inside King’s ecosystem.
+</p>
+
+<p>
+Delivering invites directly within games increased conversion while reducing spam across external networks.
+</p>
+</div>
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-2-kingdom-korner.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+
+   <article class="chapter">
+    <div class="chapter__meta">
+      <p class="chapter__number">TUENTI | 2012-2015</p>
+      <h2 class="chapter__title">Social Done Simple</h2>
+      <div class="case-study-copy">
+<p class="case-study-copy__intro">
+Tuenti was Spain’s leading social network when the company pivoted toward becoming a mobile operator. The transition created a series of growth and product challenges.
+<button type="button" class="more-link">More</button>
+</p>
+
+<div class="more-text">
+<p>
+One challenge was onboarding customers who bought Tuenti SIM cards in retail stores but never activated the digital product. Our redesign connected the retail purchase with the app experience, turning these buyers into one of Tuenti’s most active user cohorts.
+</p>
+
+<p>
+We also redesigned the first-time social experience, helping new users connect with friends within minutes through features like Find Friends and People You Might Know.
+</p>
+
+<p>
+Finally, I led the design team responsible for “Social Done Simple,” a major redesign of one of Spain’s most visited websites, simplifying the product around its core social interactions.
+</p>
+</div>
+
+      </div>
+    </div>
+
+    <div class="chapter__media">
+      <video
+        class="chapter__asset"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster=""
+      >
+        <source src="assets/chapter-1-tuenti.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+</div>
+        </section>
+
+        <section id="about-author" class="about">
+          <h2 class="section-heading">About the Author</h2>
+
+          <div class="about__content">
+            <div class="about__image-wrap">
+              <img
+                class="about__image"
+                src="assets/author-portrait.jpg"
+                alt="Portrait of Christopher Grant"
+              />
+            </div>
+
+            <div class="about__text">
+              <p>
+                I’m a child of the 90s who learned to code HTML in my dorm room. Today I’m a Senior Design Director at Docplanner, where my team designs medical-grade AI tools used by thousands of doctors around the world.
+              </p>
+
+              <p>
+                Along the way there have been chapters: social networking done simple at Tuenti, game experiences for more than 300 million players at King, building the design team that helped make Preply a unicorn, and even welcoming the world’s most famous mouse to Lingokids.
+              </p>
+
+              <p>
+                But I never lost my love of startups. I’ve mentored dozens of founders at Google Launchpads in Barcelona, Kyiv, and Johannesburg. And I’ve taught two generations of designers at ESADE, Universitat Pompeu Fabra, KSchool, EOI, and beyond.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="snapshots">
+          <h2 class="section-heading">Snapshots</h2>
+
+          <div class="snapshot-grid">
+            <figure class="snapshot">
+              <img src="assets/snapshot-ux-saga.jpg" alt="Christopher Grant speaking at Experience Fighters" />
+              <figcaption>
+                <div class="snapshot__title">Keynote Speaker</div>
+                <a
+                  class="snapshot__org"
+                  href="https://www.linkedin.com/company/experience-fighters/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Experience Fighters
+                </a>
+                <div class="snapshot__location">Madrid, Spain</div>
+              </figcaption>
+            </figure>
+
+            <figure class="snapshot">
+              <img src="assets/snapshot-joburg.jpg" alt="Christopher Grant kickoff Google's Launchpad in South Africa" />
+              <figcaption>
+                <div class="snapshot__title">Mentor</div>
+                <a
+                  class="snapshot__org"
+                  href="https://x.com/riggaroo/status/846994161664430080?s=20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Launchpad
+                </a>
+                <div class="snapshot__location">Johannesburg, South Africa</div>
+              </figcaption>
+            </figure>
+
+            <figure class="snapshot">
+              <img src="assets/snapshot-design-is-future.jpg" alt="Christopher Grant hosting a conference session" />
+              <figcaption>
+                <div class="snapshot__title">Conference Host</div>
+                <a
+                  class="snapshot__org"
+                  href="https://toormix.com/proyecto/design-is-future/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Design is Future
+                </a>
+                <div class="snapshot__location">Barcelona, Spain</div>
+              </figcaption>
+            </figure>
+
+            <figure class="snapshot">
+              <img src="assets/snapshot-game-ux.jpg" alt="Christopher Grant speaking at Game UX Summit" />
+              <figcaption>
+                <div class="snapshot__title">Keynote Speaker</div>
+                <a
+                  class="snapshot__org"
+                  href="https://www.youtube.com/watch?v=J2DFsgf-9MA&list=PLetOKfueQ61CwQNcajxhdoEqHyLzDzWjh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Game UX Summit
+                </a>
+                <div class="snapshot__location">Durham, United States</div>
+              </figcaption>
+            </figure>
+
+            <figure class="snapshot">
+              <img src="assets/snapshot-ESADE.jpg" alt="Christopher Grant mentoring at ESADE" />
+              <figcaption>
+                <div class="snapshot__title">Professor</div>
+                <a
+                  class="snapshot__org"
+                  href="https://www.esade.edu/master-of-science/en/program/master-in-digital-business/your-professional-future"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ESADE School of Design
+                </a>
+                <div class="snapshot__location">Barcelona, Spain</div>
+              </figcaption>
+            </figure>
+
+            <figure class="snapshot">
+              <img src="assets/snapshot-IED.jpg" alt="Christopher Grant mentoring Design Management Masters students' final project at Istituto Europeo di Design" />
+              <figcaption>
+                <div class="snapshot__title"> Professor and Mentor</div>
+                <a
+                  class="snapshot__org"
+                  href="https://www.ied.edu/courses/barcelona/master/strategic-design-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Istituto Europeo di Design
+                </a>
+                <div class="snapshot__location">Barcelona, Spain</div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__copyright">
+      © <span id="year"></span> Christopher Grant
+    </p>
+    <nav class="site-footer__nav">
+      <a href="https://www.linkedin.com/in/digitalaltruist" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/digitalaltruist" target="_blank" rel="noopener">Twitter</a>
+    </nav>
+
+  </div>
+</footer>
+
+      </div>
+
+    </main>
+  </body>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>

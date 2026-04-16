@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="scoreboard-shell" aria-label="Scoreboard">
+        <div id="callout" class="callout" aria-live="polite"></div>
+
+        <div class="scoreboard" role="group" aria-label="Scoreboard">
+          <div class="team team-a">
+            <div class="team-name">HOME</div>
+            <span id="team-a-score" class="score-value">0</span>
+          </div>
+
+          <div class="center-panel">
+            <div class="timer-box" aria-label="Game timer">
+              <div id="timer-value" class="timer-value">10:00</div>
+            </div>
+            <div aria-label="Banner placeholder">
+              <img
+                class="banner-img"
+                src="placeholder.png"
+                alt="Placeholder banner image"
+              />
+            </div>
+          </div>
+
+          <div class="team team-b">
+            <div class="team-name">AWAY</div>
+            <span id="team-b-score" class="score-value">0</span>
+          </div>
+        </div>
+
+        <div class="floating-controls" aria-label="Score controls">
+          <div class="team-controls">
+            <button
+              class="btn btn-minus"
+              type="button"
+              onclick="decrementTeamA()"
+            >
+            <span>-</span>
+            </button>
+            <button
+              class="btn btn-plus"
+              type="button"
+              onclick="incrementTeamA()"
+            >
+            <span>+</span>
+            </button>
+          </div>
+
+          <div class="team-controls">
+            <button
+              class="btn btn-minus"
+              type="button"
+              onclick="decrementTeamB()"
+            >
+            <span>-</span>
+            </button>
+            <button
+              class="btn btn-plus"
+              type="button"
+              onclick="incrementTeamB()"
+            >
+            <span>+</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
