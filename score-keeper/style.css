@@ -75,33 +75,42 @@ body::before {
 }
 
 .callout {
-  position: absolute;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) translateY(8px);
+  grid-column: 2;
+  justify-self: center;
+
   opacity: 0;
+  transform: translateY(8px);
+
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: #f59e0b;
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.7),
+    0 6px 18px rgba(0, 0, 0, 0.6),
+    0 0 10px rgba(255, 120, 0, 0.6);
+
+  font-weight: normal;
   padding: 0;
   background: transparent;
   border: none;
-  color: #f59e0b;
-  font-weight: 1000;
-  font-size: 1rem;
-  letter-spacing: 0.01em;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+
   transition: opacity 0.15s ease, transform 0.15s ease;
 
   pointer-events: none;
   white-space: nowrap;
-  max-width: 90%;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .callout.is-visible {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0) scale(1.1);
 }
 
 .team {
@@ -170,13 +179,12 @@ body::before {
 }
 
 .btn-minus span {
-    transform: translateY(-2px);
-  }
-  
-  .btn-plus span {
-    transform: translateY(-2px);
-  }
+  transform: translateY(-2px);
+}
 
+.btn-plus span {
+  transform: translateY(-2px);
+}
 
 .btn:hover {
   transform: translateY(-1px);
@@ -241,14 +249,14 @@ body::before {
   grid-template-columns: 260px 272px 260px;
   align-items: center;
   column-gap: 0;
-  padding: 0 0px;
+  padding: 0;
 }
 
 .floating-controls .team-controls {
   display: flex;
-
   align-items: center;
   gap: 18px;
+  margin-left: 0;
 }
 
 .floating-controls .team-controls:first-child {
@@ -272,8 +280,8 @@ body::before {
   }
 
   .callout {
-    left: 50%;
-    top: 0;
+    grid-column: auto;
+    justify-self: center;
     font-size: 0.9rem;
   }
 

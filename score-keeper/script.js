@@ -5,16 +5,16 @@ const calloutEl = document.getElementById("callout");
 const timerEl = document.getElementById("timer-value");
 
 const calloutPhrases = [
-  "This is brutal",
-  "Looks like a blowout",
-  "Running away with it",
-  "Getting out of hand",
-  "This one's slipping",
-  "It's unraveling",
-  "Turning ugly",
-  "Not even close",
-  "That gap's growing",
-  "Pulling away",
+  "This is brutal!",
+  "Looks like a blowout!",
+  "Running away with it!",
+  "Getting out of hand!",
+  "This one's slipping!",
+  "It's unraveling!",
+  "Turning ugly!",
+  "Not even close!",
+  "That gap's growing!",
+  "Pulling away...",
 ];
 
 let calloutIsShown = false;
