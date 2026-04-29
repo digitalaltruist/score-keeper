@@ -1,0 +1,30 @@
+# Todo List
+
+Initial MVP of a todo app built with Vite and vanilla JavaScript.
+
+## Features
+- Add a new todo
+- Mark a todo as complete/incomplete
+- Delete a todo
+- Persist todos in browser `localStorage`
+- Show empty state when there are no todos
+
+## Tech
+- Vite
+- Vanilla JavaScript
+- No backend (browser-only prototype)
+
+## Run locally
+1. Install dependencies: `npm install`
+2. Start the dev server: `npm run dev`
+3. Open the local URL shown in the terminal
+
+## Build for production
+- Run `npm run build`
+
+## Quick manual test checklist
+- Add two todos and confirm both appear
+- Toggle one todo completed and refresh the page
+- Confirm completion state is still persisted after refresh
+- Delete one todo and confirm it is removed
+- Delete all todos and confirm the empty-state message appears
